@@ -1,115 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | UX Designer & Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">MyPortfolio</h1>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Portfolio<span>.</span></a>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-            <ul>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Alex</span></h1>
+        <h2>UX Designer & Front-End Developer</h2>
+        <p>Crafting intuitive digital experiences and building sleek, responsive web applications.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="resume.pdf" target="_blank" class="btn btn-secondary">Resume</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="myimage.jpg" alt="Profile Image">
+      </div>
+    </div>
+  </section>
 
-                <a href="#home">Home</a>
-                <a href="#about me "> About me</a>
-                <a href="#skill">Skill</a>
-                <a href="#project">Projects</a>
-
-            </ul>
-
-        </nav>
-    </header>
-    <section class="img">
-        <img src="myimage.jpg" alt="myimage" height="250" width="250">
-    </section>
-
-    <section id="home" class="hero">
-
-
-        <div class="content">
-            <h1>Hello, I'm <span>Mukul kumar</span></h1>
-
-            <h3>Frontend Developer</h3>
-
-            <p>I create beautiful and responsive websites.</p>
-
-            <a href="#contact" class="btn">About Me</a>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="card-img">
+            <img src="body.jpg" alt="Project 1 preview">
+          </div>
+          <div class="card-content">
+            <h3>UX Case Study</h3>
+            <p>A user-centered redesign of an e-commerce platform focusing on mobile checkout conversion.</p>
+            <div class="tags">
+              <span>UX/UI</span>
+              <span>Figma</span>
+              <span>Research</span>
+            </div>
+            <a href="demo.html" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
 
-    </section>
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a beginner web developer learning HTML and CSS and the JavaScript.
-        </p>
-
-    </section>
-    <section id="myskill">
-        <h2>Skill</h2>
-
-        <ul>
-
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Basic Python</li>
-
-        </ul>
-
-
-    </section>
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="project-container">
-
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>Calculator Website</p>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="card-img">
+            <img src="body.jpg" alt="Project 2 preview">
+          </div>
+          <div class="card-content">
+            <h3>Web Dashboard</h3>
+            <p>Responsive analytics dashboard built with modern web components and interactive charts.</p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
             </div>
-
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>Landing Page</p>
-            </div>
-
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>My Portfolio Website</p>
-            </div>
-
+            <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
 
-    </section>
-    <section class="rbtn">
-        <h2>Get My Resume:-</h2>
-        <br>
-        <a href="resume.pdf"><button>
-                <h3>View</h3>
-            </button></a>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-pen-nib"></i> UX/UI Design</h3>
+          <ul>
+            <li>Wireframing & Prototyping</li>
+            <li>User Research & Testing</li>
+            <li>Design Systems</li>
+            <li>Figma / Adobe XD</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Frontend Dev</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>Git & Version Control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <h2>Contact Me</h2>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">Have a project in mind or just want to say hi? Feel free to drop a message!</p>
+      
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-        <p>Email: mk6257829@gamil.com</p>
-        <p>Phone: 7668117686</p>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2026 Portfolio. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    </section>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
