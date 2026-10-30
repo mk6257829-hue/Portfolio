@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1026">
+  <meta name="description" content="Mukul Kumar — developer, chai enthusiast, and professional tab collector.">
+  <title>Mukul Kumar — Developer &amp; Professional Tab Collector</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="intro-active" data-page="home">
+  <div class="bg-orb orb-one" aria-hidden="true"></div><div class="bg-orb orb-two" aria-hidden="true"></div><div class="bg-orb orb-three" aria-hidden="true"></div><span class="cursor-glow" aria-hidden="true"></span>
+  <div class="intro" id="intro" role="dialog" aria-label="Portfolio introduction">
+    <div class="intro-content">
+      <span class="intro-label">A tiny dramatic entrance</span>
+      <div class="chain-swing">
+        <svg class="chain-svg" viewBox="0 0 78 230" role="img" aria-label="A hanging metal chain">
+          <defs>
+            <linearGradient id="metal" x1="0" x2="1">
+              <stop offset="0" stop-color="#555967"/><stop offset=".2" stop-color="#f3f5ff"/><stop offset=".43" stop-color="#858b9a"/><stop offset=".68" stop-color="#f9faff"/><stop offset="1" stop-color="#656b7c"/>
+            </linearGradient>
+            <filter id="chain-shadow" x="-80%" y="-20%" width="260%" height="150%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000" flood-opacity=".55"/></filter>
+          </defs>
+          <g class="chain-metal">
+            <ellipse cx="39" cy="7" rx="11" ry="15"/><ellipse cx="39" cy="25" rx="11" ry="15" transform="rotate(90 39 25)"/>
+            <ellipse cx="39" cy="43" rx="11" ry="15"/><ellipse cx="39" cy="61" rx="11" ry="15" transform="rotate(90 39 61)"/>
+            <ellipse cx="39" cy="79" rx="11" ry="15"/><ellipse cx="39" cy="97" rx="11" ry="15" transform="rotate(90 39 97)"/>
+            <ellipse cx="39" cy="115" rx="11" ry="15"/><ellipse cx="39" cy="133" rx="11" ry="15" transform="rotate(90 39 133)"/>
+            <ellipse cx="39" cy="151" rx="11" ry="15"/><ellipse cx="39" cy="169" rx="11" ry="15" transform="rotate(90 39 169)"/>
+            <ellipse cx="39" cy="187" rx="11" ry="15"/><ellipse cx="39" cy="205" rx="11" ry="15" transform="rotate(90 39 205)"/>
+            <ellipse cx="39" cy="223" rx="11" ry="15"/>
+          </g>
+          <g class="chain-highlight"><path d="M32 1c-5 6-4 14 0 19M32 37c-5 6-4 14 0 19M32 73c-5 6-4 14 0 19M32 109c-5 6-4 14 0 19M32 145c-5 6-4 14 0 19M32 181c-5 6-4 14 0 19"/></g>
+        </svg>
+        <div class="id-card swing-trigger" tabindex="0" role="button" aria-label="Click or hover to swing the photo">
+          <span class="card-clip"></span><div class="photo-wrap"><img src="my photo.jpeg" alt="Mukul Kumar profile photo"></div>
+          <p class="card-name">Mukul Kumar</p><p class="card-role">Developer • Bug negotiator</p>
+        </div>
+        <span class="warning-tag">Warning: Developer at work 😎</span>
+      </div>
+      <p class="intro-hint">Click the photo for a dramatic swing. Obviously.</p>
+      <button class="button enter-button" id="enter-button" type="button">Enter portfolio <span aria-hidden="true">↗</span></button>
+    </div>
+  </div>
+
+  <div class="site" id="site" inert>
+    <header class="navbar"><nav class="container nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-current="page">mukul<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="fun.html">Fun</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme"><span id="theme-icon" aria-hidden="true">☀️</span></button><button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu"><span aria-hidden="true">☰</span></button></div>
+    </nav></header>
+    <main>
+      <section class="hero" id="home"><div class="container hero-grid">
+        <div class="reveal"><span class="availability"><span class="availability-dot"></span> Available for interesting things</span>
+          <h1>Hey, I'm<br><span class="gradient-text">Mukul Kumar.</span></h1>
+          <p class="hero-tagline"><span id="typing-text"></span><span class="typing-caret" aria-hidden="true"></span></p>
+          <p class="hero-copy">I turn <strong>“this should be easy”</strong> into surprisingly good digital experiences — and occasionally into 37 open tabs.</p>
+          <div class="hero-buttons"><a class="button" data-magnetic href="projects.html">View Projects <span aria-hidden="true">↘</span></a><a class="button button-secondary" data-magnetic href="contact.html">Contact Me <span aria-hidden="true">☕</span></a></div>
+          <div class="hero-meta"><span class="avatar-stack" aria-hidden="true"><span class="mini-avatar">JS</span><span class="mini-avatar">CSS</span><span class="mini-avatar">☕</span></span><span>Built with curiosity &amp; questionable sleep hours</span></div>
+        </div>
+        <div class="hero-art reveal reveal-delay-2" aria-label="Developer portrait"><div class="hero-portrait"><img src="my-photo.jpg" alt="Portrait of Mukul Kumar"></div><span class="float-chip chip-code">{ "code": "coffee" } ✨</span><span class="float-chip chip-coffee">☕ Fuel: 98% chai</span></div>
+      </div></section>
+      <section class="section"><div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">A quick intro</span><h2>Professional enough.<br><span class="gradient-text">Human enough.</span></h2><p>Yes, I also Google things I have Googled before.</p></div>
+        <div class="bento-grid">
+          <article class="bento-card glass bento-wide reveal"><span class="bento-icon" aria-hidden="true">🧠</span><h3>Curious by default. Developer by choice.</h3><p>I like making the web useful, thoughtful, and a little more fun. Clean code, tiny details, and buttons that actually do the thing: the dream.</p></article>
+          <article class="bento-card glass reveal reveal-delay-1"><span class="bento-icon" aria-hidden="true">☕</span><h3>Powered by chai</h3><p>My build process has a very reliable hot beverage dependency.</p></article>
+          <article class="bento-card glass reveal reveal-delay-2"><span class="bento-icon" aria-hidden="true">🧪</span><h3>Always experimenting</h3><p>New ideas welcome. Surprise console errors less so.</p></article>
+        </div>
+        <div class="section-action reveal"><a class="button" data-magnetic href="about.html">More about me <span aria-hidden="true">↗</span></a></div>
+      </div></section>
+      <section class="section"><div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">Selected work</span><h2>Fresh out of my<br><span class="gradient-text">drafts folder.</span></h2><p>Small previews of things built with curiosity and a suspicious number of browser tabs.</p></div>
+        <div class="project-grid">
+          <article class="project-card glass reveal" data-tilt><div class="project-art"><span class="project-art-icon" aria-hidden="true">🪴</span></div><div class="project-body"><div class="project-meta"><h3>Plant Parent</h3><span>2025</span></div><p>A dashboard for keeping houseplants alive. My fern did the QA.</p><div class="tag-list"><span class="tag">JavaScript</span><span class="tag">CSS</span></div></div></article>
+          <article class="project-card glass reveal reveal-delay-1" data-tilt><div class="project-art"><span class="project-art-icon" aria-hidden="true">🧾</span></div><div class="project-body"><div class="project-meta"><h3>Split Happens</h3><span>2025</span></div><p>A no-drama bill splitter for friends who forget maths after dinner.</p><div class="tag-list"><span class="tag">React</span><span class="tag">TypeScript</span></div></div></article>
+        </div>
+        <div class="section-action reveal"><a class="button" data-magnetic href="projects.html">All projects <span aria-hidden="true">↗</span></a></div>
+      </div></section>
+      <section class="section"><div class="container"><div class="bento-card glass home-cta reveal"><span class="eyebrow">Have a good one?</span><h2>Let's make something<br><span class="gradient-text">delightfully useful.</span></h2><p>Project idea, kind meme, or strong chai recommendation — my inbox is open.</p><a class="button" data-magnetic href="contact.html">Contact me <span aria-hidden="true">↗</span></a></div></div></section>
+    </main>
+    <footer class="footer"><div class="container"><p>Made with <span class="heart">❤️</span>, ☕ and 100 Google searches.</p></div></footer>
+  </div>
+</body>
+</html>
